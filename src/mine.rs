@@ -48,7 +48,7 @@ impl Miner {
                 proof,
                 cutoff_time,
                 args.threads,
-                15,//config.min_difficulty as u32,
+                12,//config.min_difficulty as u32,
             )
             .await;
 
