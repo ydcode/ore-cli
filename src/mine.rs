@@ -113,6 +113,8 @@ impl Miner {
                                     if best_difficulty.gt(&min_difficulty) {
                                         // Mine until min difficulty has been met
                                         break;
+                                    } else {
+                                         println!("\n less than min_difficulty : {} ", best_difficulty);
                                     }
                                 } else if i == 0 {
                                     progress_bar.set_message(format!(
